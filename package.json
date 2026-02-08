@@ -1,8 +1,11 @@
 {
   "name": "@daaa1k/my-commitlint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "My commitlint config",
   "main": "commitlint.config.js",
+  "files": [
+    "commitlint.config.js"
+  ],
   "scripts": {
     "test": "vitest run"
   },
