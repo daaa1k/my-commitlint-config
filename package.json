@@ -1,0 +1,26 @@
+{
+  "name": "@daaa1k/my-commitlint-config",
+  "version": "0.0.1",
+  "description": "My commitlint config",
+  "main": "commitlint.config.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [],
+  "author": "d4k1",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daaa1k/my-commitlint-config.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "packageManager": "pnpm@10.29.1",
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/lint": "^20.4.1",
+    "vitest": "^4.0.18"
+  }
+}
