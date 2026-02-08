@@ -17,7 +17,8 @@
     "url": "https://github.com/daaa1k/my-commitlint-config.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "packageManager": "pnpm@10.29.1",
   "devDependencies": {
