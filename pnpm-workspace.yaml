@@ -1,4 +1,4 @@
 packages: []
 pnpm:
   updateConfig:
-    minimumReleaseAge: 2880m
+    minimumReleaseAge: 2880
