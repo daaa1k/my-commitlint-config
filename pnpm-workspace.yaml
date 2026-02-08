@@ -1,0 +1,4 @@
+packages: []
+pnpm:
+  updateConfig:
+    minimumReleaseAge: 2880
