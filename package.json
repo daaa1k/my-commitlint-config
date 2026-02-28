@@ -23,7 +23,7 @@
   "packageManager": "pnpm@10.29.1",
   "devDependencies": {
     "@commitlint/cli": "^20.4.1",
-    "@commitlint/config-conventional": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.2",
     "@commitlint/lint": "^20.4.2",
     "vitest": "^4.0.18"
   }
