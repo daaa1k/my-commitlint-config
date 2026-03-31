@@ -15,6 +15,7 @@ jobs:
       contents: write
       pull-requests: write
       issues: read
+      packages: write
     timeout-minutes: 60
     steps:
       - name: Check out source code
@@ -34,3 +35,24 @@ jobs:
         with:
           tag: ${{ steps.tagpr.outputs.tag }}
           major_version_tag_only: true
+
+      # GitHub does not start workflows from events created by GITHUB_TOKEN (e.g. release: published).
+      # Songmu/tagpr creates the release with GITHUB_TOKEN, so publish.yml does not run; publish here instead.
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5.0.0
+        if: steps.tagpr.outputs.tag != ''
+
+      - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+        if: steps.tagpr.outputs.tag != ''
+        with:
+          node-version: 24
+          cache: pnpm
+          registry-url: https://npm.pkg.github.com
+
+      - name: Publish to GitHub Packages
+        if: steps.tagpr.outputs.tag != ''
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm test
+          pnpm publish --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
