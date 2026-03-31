@@ -1,5 +1,7 @@
 # Changelog
 
+## [v0.0.5](https://github.com/daaa1k/my-commitlint-config/compare/v0.0.4...v0.0.5) - 2026-03-31
+
 ## [v0.0.4](https://github.com/daaa1k/my-commitlint-config/compare/v0.0.3...v0.0.4) - 2026-03-31
 - chore(deps-dev): bump @commitlint/lint from 20.4.1 to 20.4.2 by @dependabot[bot] in https://github.com/daaa1k/my-commitlint-config/pull/10
 - chore(deps-dev): bump @commitlint/config-conventional from 20.4.1 to 20.4.2 by @dependabot[bot] in https://github.com/daaa1k/my-commitlint-config/pull/9
