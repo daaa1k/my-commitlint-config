@@ -1,3 +1,4 @@
+# Publishes after Songmu/tagpr merges the release PR and creates a GitHub Release (see tagpr.yml).
 name: Publish to GitHub Packages
 
 on:

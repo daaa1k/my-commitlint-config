@@ -1,0 +1,7 @@
+[tagpr]
+vPrefix = true
+releaseBranch = main
+release = true
+versionFile = package.json
+majorLabels = "tagpr:major"
+minorLabels = "tagpr:minor"

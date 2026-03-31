@@ -1,0 +1,36 @@
+# tagpr: opens/updates a release PR from main; merging it tags main and publishes a GitHub Release.
+# After a full semver tag (e.g. v1.0.0), action-update-semver also moves the major tag (e.g. v1).
+# Repository Settings → Actions → General: enable "Allow GitHub Actions to create and approve pull requests".
+name: tagpr
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  tagpr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: read
+    timeout-minutes: 60
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          persist-credentials: false
+
+      - id: tagpr
+        name: Run tagpr
+        uses: Songmu/tagpr@b3fb89424646b06c8aa460f50307c60b6a541425 # v1.17.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update major semver tag
+        if: steps.tagpr.outputs.tag != ''
+        uses: haya14busa/action-update-semver@7d2c558640ea49e798d46539536190aff8c18715 # v1.5.1
+        with:
+          tag: ${{ steps.tagpr.outputs.tag }}
+          major_version_tag_only: true
