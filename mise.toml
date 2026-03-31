@@ -1,4 +1,12 @@
 [tools]
-node = "24"
-pnpm = "latest"
+node = "prefix:24"
+pnpm = "prefix:10"
 prek = "latest"
+
+[tasks.renovate-check]
+run = "npx --yes --package renovate -- renovate-config-validator renovate.json"
+description = "Validate renovate.json"
+
+[tasks.pinact-update]
+run = "pinact run -u -m 5"
+description = "Update github actions' pinned dependencies (with minReleaseAge 5 days)"
