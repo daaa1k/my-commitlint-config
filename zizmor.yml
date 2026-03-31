@@ -2,4 +2,4 @@ rules:
   use-trusted-publishing:
     ignore:
       # GitHub Packages publish uses NODE_AUTH_TOKEN; OIDC trusted publishing is optional here.
-      - publish.yml
+      - tagpr.yml

@@ -36,6 +36,34 @@ url = "https://nodejs.org/dist/v24.13.0/node-v24.13.0-win-x64.zip"
 version = "10.29.1"
 backend = "aqua:pnpm/pnpm"
 
+[tools.pnpm."platforms.linux-arm64"]
+checksum = "sha256:09d3821bc2f1ed882885429b25652df8b2f1e25f95b5588ca4664bc9b1096e31"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-linux-arm64"
+
+[tools.pnpm."platforms.linux-arm64-musl"]
+checksum = "sha256:09d3821bc2f1ed882885429b25652df8b2f1e25f95b5588ca4664bc9b1096e31"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-linux-arm64"
+
+[tools.pnpm."platforms.linux-x64"]
+checksum = "sha256:df728857c759d9d355b245ae889aee1c54a634d51486e76d1ecaaaead26569b2"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-linux-x64"
+
+[tools.pnpm."platforms.linux-x64-musl"]
+checksum = "sha256:df728857c759d9d355b245ae889aee1c54a634d51486e76d1ecaaaead26569b2"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-linux-x64"
+
+[tools.pnpm."platforms.macos-arm64"]
+checksum = "sha256:8d2ea78407abea669c15d1dc28dddd2888040b88319ad7d54bb455f033047bfe"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-macos-arm64"
+
+[tools.pnpm."platforms.macos-x64"]
+checksum = "sha256:c19ff1f2869e7ccd74845a8198ed41478b14d1f2410057adf6468a39adcd75b2"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-macos-x64"
+
+[tools.pnpm."platforms.windows-x64"]
+checksum = "sha256:c2e20df7e15ed446f5f3e33abe013ae861dab2c2dd32bd62065fd43645973e5c"
+url = "https://github.com/pnpm/pnpm/releases/download/v10.29.1/pnpm-win-x64.exe"
+
 [[tools.prek]]
 version = "0.3.8"
 backend = "aqua:j178/prek"

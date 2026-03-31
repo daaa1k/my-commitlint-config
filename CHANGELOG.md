@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.1](https://github.com/daaa1k/my-commitlint-config/compare/v1...v1.0.1) - 2026-03-31
+## [v1.0.1](https://github.com/daaa1k/my-commitlint-config/compare/v1.0.0...v1.0.1) - 2026-03-31
 
 ## [v1.0.0](https://github.com/daaa1k/my-commitlint-config/compare/v0.0.4...v1.0.0) - 2026-03-31
 
