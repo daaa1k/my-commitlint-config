@@ -26,6 +26,9 @@ setup_mise() {
 
   echo "Installing mise tools..."
   mise install
+
+  echo "Locking mise tools..."
+  mise lock
 }
 
 # Setup pre-commit hooks
