@@ -16,4 +16,4 @@ jobs:
         with:
           persist-credentials: false
 
-      - uses: daaa1k/github-actions-lint@da8a31ebd224d959b6a96b0bc389b948acb4648c # v1.0.0
+      - uses: daaa1k/github-actions-lint@c320df11a02e496d8248d23d7e6f6f1a1fee6f05 # v1.0.2
